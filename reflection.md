@@ -33,7 +33,7 @@ Document at least 3 bugs you found. Add rows as needed.
 I used claude code in VS Code to help me with this project.
 
 When fixing the hints for the guessed number, the AI pointed out that the fallback check existed for and executed on app.py, where the secret number on even attempts would be updated as a string causing the type error to run and check the guessed number against a string.
-
+So far while doing this project I didn't have a time where I disagreed with the AI generated code.
 
 ---
 
@@ -46,12 +46,14 @@ When fixing the hints for the guessed number, the AI pointed out that the fallba
 
 I decided if a bug was fixed by re-running the code and testing it out manually, as well as asking the AI assistant if the code can handle edge cases.
 After fixing the hints for the guessed number I tried the game again and found the hints to help drastically compared to before.
+I also asked the AI assistant to write tests for me to test the hints and each of those tests specifically came back successful.
 
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+It took me a while to find out but the reruns allow you to make changes and still have your code running, instead of stopping it and running it again to test out every change. Session state also helps with this making it so that your values are saved while you debug and change things, so that theres no need to constantly repeat setup steps to test if your changes work.
 
 ---
 
@@ -63,4 +65,6 @@ After fixing the hints for the guessed number I tried the game again and found t
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
 
 A habit I will reuse is making new chats with the AI assistant to solve each bug, and also manually approving each change so I can have full awareness of what the AI assistant does.
+What I would do differently is take time to look through parts of the code and use AI to help me understand the logic in key areas so that I can have a better idea of whats going on and how I can modify it.
+This project help me see how AI is capable of going through logic and also finding other places where this logic could apply or cause error weather it be a couple lines away or in another file, its able to see the current problem and sometimes a future problem. It is also good to move / refactor code into another place or file.
 
